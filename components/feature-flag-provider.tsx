@@ -42,8 +42,8 @@ const defaultFlags: Record<string, FeatureFlag> = {
     name: "dashboard_v2",
     description: "Enhanced dashboard with budget breakdown and visual charts",
     enabled: false,
-    rolloutStrategy: "off",
-    rolloutPercentage: 0,
+    rolloutStrategy: "percentage",
+    rolloutPercentage: 30,
     userSegments: ["premium", "beta"],
   },
   showVirtualCard: {
@@ -68,7 +68,7 @@ const defaultFlags: Record<string, FeatureFlag> = {
     enabled: false,
     rolloutStrategy: "off",
     rolloutPercentage: 0,
-    userSegments: ["premium", "beta"],
+    userSegments: ["premium", "beta", "guest"],
   },
 };
 
